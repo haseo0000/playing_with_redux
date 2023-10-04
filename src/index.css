@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 60%;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.custom_form label {
+  color: #fff !important;
+}
+
+.navbar_color {
+  background-color: black;
+}
+
+.movie_card {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+}
+
+.movie_detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
